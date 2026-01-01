@@ -16,7 +16,6 @@ while True:
     if not ret:
         break
 
-    # Resize for speed
     frame = cv2.resize(frame, (640, 480))
 
     boxes, _ = hog.detectMultiScale(
@@ -44,3 +43,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
